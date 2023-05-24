@@ -16,19 +16,20 @@ void setup() {
   driver_setup();
   
   attachInterrupt(digitalPinToInterrupt(LIMITSWITCH_PIN0), limitswitch_ISR, RISING);
-  attachInterrupt(digitalPinToInterrupt(LIMITSWITCH_PIN1), limitswitch_ISR, RISING);
+ // attachInterrupt(digitalPinToInterrupt(LIMITSWITCH_PIN1), limitswitch_ISR, RISING);
   
   
   // Set up TMC2208 driver
-//  stepper.moveTo(-XmaxPos);
-//  stepper.runToPosition();
+ stepper.moveTo(-XmaxPos);
+ stepper.runToPosition();
 //  stepper.moveTo(XmaxPos);
 //  stepper.runToPosition();
 
- stepper.moveTo(-YmaxPos);
- stepper.runToPosition();
- stepper.moveTo(YmaxPos);
- stepper.runToPosition();
+//  stepper.moveTo(-YmaxPos);
+//  stepper.runToPosition();
+//  stepper.moveTo(YmaxPos);
+//  stepper.runToPosition();
+
 }
 
 void loop() {

@@ -5,7 +5,7 @@
 #include <TMC2208Stepper.h>
 
 // Define stepper motor connections and settings
-// #define X_axis
+#define X_axis
 #ifdef X_axis
 #define DIR_PIN PA15
 #define STEP_PIN PB3

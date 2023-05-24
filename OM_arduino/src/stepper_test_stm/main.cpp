@@ -4,15 +4,15 @@
 
 // Define stepper motor connections and settings
 
-// #define DIR_PIN PA15
-// #define STEP_PIN PB3
-// #define ENABLE_PIN PB4
-// #define maxPos 26500
+#define DIR_PIN PA15
+#define STEP_PIN PB3
+#define ENABLE_PIN PB4
+#define maxPos 26500
 
-#define DIR_PIN PB5
-#define STEP_PIN PB8
-#define ENABLE_PIN PB9
-#define maxPos 40000
+// #define DIR_PIN PB5
+// #define STEP_PIN PB8
+// #define ENABLE_PIN PB9
+// #define maxPos 40000
 
 
 #define MICROSTEPS 16
